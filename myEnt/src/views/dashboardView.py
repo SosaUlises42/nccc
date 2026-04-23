@@ -1,4 +1,5 @@
 import flet as ft
+from controllers.tareacontroller import TareaController
 def DashboardView(page, tarea_controller):
     user= page.session.get("user")
     lista_tareas = ft.Column(scroll=ft.ScrollMode.ALWAYS, expand=True)

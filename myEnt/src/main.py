@@ -1,13 +1,13 @@
 import flet as ft
-from controllers.usercontroller import AuthController
-from controllers.tareacontroller import TareaController
+from src.controllers.usercontroller import AuthController
+from src.controllers.tareacontroller import TareaController
 from src.views.loginView import LoginView
 from src.views.dashboardView import DashboardView
 
 def main(page: ft.Page):
     auth_ctrl = AuthController()
     task_ctrl = TareaController()
-    
+
     def route_change(route):
         page.views.clear()
         if page.route == "/":
